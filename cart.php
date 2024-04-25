@@ -2,7 +2,7 @@
 session_start();
 
 include_once "db.php";
-
+echo "hi";
 if (isset( $_GET['remove'] , $_SESSION['cart'] )) {
     $remove_id = $_GET['remove'];
     foreach( $_SESSION['cart'] as $key => $item )
